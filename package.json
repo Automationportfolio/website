@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automationportfolio/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automationportfolio/website/issues"
+  },
+  "homepage": "https://github.com/Automationportfolio/website#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
