@@ -18,7 +18,7 @@ $(function () {
       }
       $.ajax({
         method: 'POST',
-        url: 'https://formsubmit.co/ajax/your@email.com',
+        url: 'https://formsubmit.co/ajax/contact@qualitxinc.com',
         dataType: 'json',
         accepts: 'application/json',
         data: {
