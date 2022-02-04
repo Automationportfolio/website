@@ -1,442 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-     <title>Qualitx Inc.</title>
+    <title>Qualitx</title>
 
-<!--
+    <!-- Bootstrap Core CSS
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-Known Template
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
 
-https://templatemo.com/tm-516-known
+    <link rel="icon" type="image/x-icon" href="fav.ico">
 
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizer js -->
+    <script src="js/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
-          </div>
-     </section>
+<body class="index" style="height: 100%; max-width: 100vw;">
 
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar-nav" style="background-color: #fff; max-width: 100vw;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-cropped.png" class="img img-responsive" style="width: 200px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="justify-self: self-end;" id="navbarNav">
+                <ul class="navbar-nav nav-pills ms-auto" id="navUL">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#industries">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item" hidden>
+                        <a class="nav-link" href="#ok">cc</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-     <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
-          <div class="container">
+    <!-- Start Home Page Slider -->
+    <section id="page-top">
+        <div class="bg-overlay">
 
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
+            <center>
+                <a href="#about-us" class="btn btn-lg btn-danger" id="learn-more-btn">Learn More</a>
+            </center>
 
-                    <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Qualitx Inc.</a>
-               </div>
+        </div>
+    </section>
+    <!-- End Home Page Slider -->
 
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About</a></li>
-                         <li><a href="#team" class="smoothScroll">Our Projects</a></li>
-                         <li><a href="#testimonial" class="smoothScroll">Client Reviews</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
-                    </ul>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-nav" data-bs-offset="50" class="scrollspy-example" tabindex="0">
 
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#"><i class="fa fa-phone"></i> +92 320 0494205</a></li>
-                    </ul>
-               </div>
+        <div style="position: relative !important;">
 
-          </div>
-     </section>
+            <!-- Start About Us Section -->
+            <section id="about-us" class="about-us-section-1 ">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="section-title text-start">
+                                <h3>About Us</h3>
+                                <p id="about-us-text">
+                                    Qualitx is an autonomous software testing and data frameworks
+                                    inspecting organization. As a product testing organization, Qualitx has served a
+                                    worldwide customer base guaranteeing the nature of their web, portable and work area
+                                    applications across various industry verticals. Notwithstanding application testing,
+                                    Qualitx gives quality administration of data frameworks and IT foundations. We have
+                                    gotten our customers through security reviews, characterizing security design,
+                                    information spillage anticipation and infiltration testing. Our review programs
+                                    cover processes, methods, controls, information, equipment, programming and
+                                    organizations.
 
-     <!-- HOME -->
-     <section id="home">
-          <div class="row">
-               <div class="owl-carousel owl-theme home-slider">
-                    <div class="item item-first">
-                         <div class="caption">
-                              <div class="container">
+                                    Qualitx has created adaptable and consistent structures combined with scope of
+                                    software testing tools that empower us to give an unprejudiced and straightforward
+                                    assessment of software quality. This makes us a thought quality affirmation
+                                    accomplice for any product seller or autonomous innovation-driven associations. We
+                                    have a resolute responsibility towards assisting our customers with creating hearty,
+                                    viable and sensibly blunder free programming.
 
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+                                    Underlying foundations of the word Qualitx are derived from the word Quality. This
+                                    reflects upon our way of thinking of focusing on Quality before some other boundary.
+                                </p>
 
-     <!-- FEATURE -->
-     <section id="feature">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>01</span>
-                              <h3>Project Management</h3>
-                              <p>Project management services specialize in planning, coordinating, and executing projects according to specific requirements and constraints. They perform some or all of the activities related to project work, from conceptualization to completion.</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>02</span>
-                              <h3>Manual Testing</h3>
-                              <p>Our manual testing service assesses product quality from the end-user perspective. Manual testing checks whether the system operates according to specified system requirements without any errors or failures.</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>03</span>
-                              <h3>Automation Testing</h3>
-                              <p>Test automation services include implementation of a wide set of testing and around-testing components: from planning and tool selection to the construction and maintenance of a test automation environment, implementation of automated test data preparation, design and maintenance of all types of automated test scripts</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>04</span>
-                              <h3>API Testing</h3>
-                              <p>Improve reliability, functionality, security and performance of the application with our API testing service. Hire a reliable API Testing Company now!</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>05</span>
-                              <h3>UI/UX testing</h3>
-                              <p>Our focus is that the application should be easy to learn, use and navigate and should meet customers’ expectations. Software usability testing will help you identify all the usability issues before the application is released to the end-users</p>
-                         </div>
+                                <p>
+                                <h4>Motto</h4>
+                                <p>House Where Quality Meets</p>
+                                <h4>Vision</h4>
+                                <p>To embed robust quality assurance practices deeply into the development lifecycle to
+                                    enable you to reduce cost, time, and effort on testing, year-on-year.</p>
+                                <h4>Mission</h4>
+                                <p>To provide quality products to our customers by giving them innovative solutions.</p>
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>06</span>
-                              <h3>Perforamance Testing</h3>
-                              <p>Software performance testing is aimed to ensure the system's stability and proper functioning under expected, continuous, and stress load.</p>
-                         </div>
+                </div><!-- /.container -->
+            </section>
+            <!-- End About Us Section -->
+
+
+            <!-- Start Feature Section -->
+            <section id="service" style="background-color: #f7f7f7;" class="services-section ">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h3>Our Services</h3>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <center>
+                        <div class="row mt-3">
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-project-diagram"></i>
+                                    <div class="feature-content">
+                                        <h4>Project Management</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-4 -->
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-laptop-code"></i>
+                                    <div class="feature-content">
+                                        <h4>Manual Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-cogs"></i>
+                                    <div class="feature-content">
+                                        <h4>Automation Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-pager"></i>
+                                    <div class="feature-content">
+                                        <h4>API Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-toggle-off"></i>
+                                    <div class="feature-content">
+                                        <h4>UI/UX Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-mobile-alt"></i>
+                                    <div class="feature-content">
+                                        <h4>Mobile App Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-tachometer-alt"></i>
+                                    <div class="feature-content">
+                                        <h4>Performance Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-window-restore"></i>
+                                    <div class="feature-content">
+                                        <h4>Cross Browser Testing</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </center>
+                    <!-- /.col-md-4 -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- End Feature Section -->
+
+
+            <!-- End Feature Section -->
+            <!-- Industries -->
+            <section id="industries" class="feature-section">
+                <div class="container mt-5">
+
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h3>Our Industries</h3>
+                        </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>07</span>
-                              <h3>Mobile Apps Testing</h3>
-                              <p>we will test your application on real devices and emulators to find the defects and deliver releases on time.</p>
-                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 full-height-card">
-                         <div class="feature-thumb">
-                              <span>08</span>
-                              <h3>Browser Compatability</h3>
-                              <p>templatemo provides a wide variety of free Bootstrap Templates for you. Please tell your friends about us. Thank you.</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+                    <center>
+                        <div class="row mt-3 p-0">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <div class="feature-content">
+                                        <h4>E-Commerce</h4>
 
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-dice-d20"></i>
+                                    <div class="feature-content">
+                                        <h4>Blockchain</h4>
 
-     <!-- ABOUT -->
-     <section id="about">
-          <div class="container">
-               <div class="row">
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-heartbeat"></i>
+                                    <div class="feature-content">
+                                        <h4>Healthcare</h4>
 
-                    <div class="col-md-6 col-sm-12">
-                         <div class="about-info">
-                              <h2>Make you application easy and reliable for users</h2>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fab fa-cloudversify"></i>
+                                    <div class="feature-content">
+                                        <h4>Cloud Sharing</h4>
 
-                              <figure>
-                                   <span><i class="fa fa-users"></i></span>
-                                   <figcaption>
-                                        <h3>Professional People</h3>
-                                        <p>Our team work dedicatily and we have hands-on experience with multiple automation & Manual tools. We are also proficient in different test management tools.</p>
-                                   </figcaption>
-                              </figure>
+                                    </div>
+                                </div>
+                            </div>
 
-                              <figure>
-                                   <span><i class="fa fa-certificate"></i></span>
-                                   <figcaption>
-                                        <h3>Certified People</h3>
-                                        <p>Our team has Scrum certified people.</p>
-                                   </figcaption>
-                              </figure>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-chalkboard-teacher"></i>
+                                    <div class="feature-content">
+                                        <h4>E-Learning</h4>
 
-                              <figure>
-                                   <span><i class="fa fa-bar-chart-o"></i></span>
-                                   <figcaption>
-                                        <h3>Dedicated Team</h3>
-                                        <p>A dedicated team of testers and quality assurance specialists that provides testing of long-term projects and is oriented on a successful solution of tasks set by the client. The client independently decides the team line-up, the number of experts and their work-schedule. On the basis of these requirements the team is formed and is under client’s control on the stipulated time. </p>
-                                   </figcaption>
-                              </figure>
-                         </div>
-                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-money-check-alt"></i>
+                                    <div class="feature-content">
+                                        <h4>Finance</h4>
 
-               </div>
-          </div>
-     </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-people-carry"></i>
+                                    <div class="feature-content">
+                                        <h4>ERP</h4>
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-server"></i>
+                                    <div class="feature-content">
+                                        <h4>IT Inventory & Asset Management Software</h4>
 
-     <!-- TEAM -->
-     <section id="team">
-          <div class="container">
-               <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-user-shield"></i>
+                                    <div class="feature-content">
+                                        <h4>Insurance</h4>
 
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Projects <small>See ours projects</small></h2>
-                         </div>
-                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-shipping-fast"></i>
+                                    <div class="feature-content">
+                                        <h4>Freight & Logistics</h4>
 
-                    <div class="col-md-3 col-sm-6 full-height-card">
-                         <div class="team-thumb">
-                         <div class="team-image">
-                                   <img src="images/wordpress.png" class="img-responsive" alt="">
-                              </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-landmark"></i>
+                                    <div class="feature-content">
+                                        <h4>Property & Sales</h4>
 
-                              <div class="team-info">
-                                   <h3>Wordpress</h3>
-                                   <p> We have worked extensively on wordpress plugins. </p>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 full-height-card">
-                         <div class="team-thumb">
-                              <div class="team-image">
-                                   <img src="images/ecommerce.jpg" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>E-commerce websites</h3>
-                                   <p> we performed QA on various E-Commerce websites of our Clients. Testing covers all platforms including browsers, Mobile and IPad. After identifying issues we have to create a comprehensive bug report. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="feature">
+                                    <i class="fa fa-brain"></i>
+                                    <div class="feature-content">
+                                        <h4>Artificial Intelligence</h4>
 
-                              </div>
-                         </div>
-                    </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="col-md-3 col-sm-6 full-height-card">
-                         <div class="team-thumb">
+                            <!-- /.row -->
 
-                              <div class="team-image">
-                                   <img src="images/logistic.jpg" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Logistic managemnet system</h3>
-                                   <p> The platform for manufacturers with powerful, affordable enterprise features to simplify shipping and supply chain ops.</p>
-                                   <span></span>
-                              </div>
+                        </div>
+                    </center>
+                </div><!-- /.container -->
+            </section>
 
-                         </div>
-                    </div>
+            <!-- Start Testimonial Section -->
+            <section id="testimonial" class="testimonial-section text-center">
+                <div class="section-title mt-5">
+                    <h3>Happy Client Reviews</h3>
+                </div>
+                <div class="container-md mt-3">
+                    <!-- Start Testimonials Carousel -->
 
-                    <div class="col-md-3 col-sm-6 full-height-card">
-                         <div class="team-thumb">
-
-                              <div class="team-image">
-                                   <img src="images/insurance.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Insurance comparision platform</h3>
-                                   <p> The main purpose of the app is to provide Quotes from different vendors. The application
-                                   used to collect user and vehicle information and based on that it provided quotes. Users
-                                   can buy insurance plans from there. I used ​ JIRA​ , ​ TESTRAIL​ , ​ MYSQL​ for this project. </p>
-                                   <span></span>
-                              </div>
-
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 full-height-card">
-                         <div class="team-thumb">
-                              <div class="team-image">
-                                   <img src="images/edx.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Edx based E-learning platforms</h3>
-                                  <p> This application was based on the Edx platform it provides the LMS for learnings so they
-                                   can get courses. This platform also provides CMS for stuff users so they can manage
-                                   courses. I used these tools for this project: ​ JIRA​ , ​ POSTMAN​ , ​ XRAY​ .</p>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- Courses -->
-
-     <!-- TESTIMONIAL -->
-     <section id="testimonial">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Our Valuable Clients Review <small>from around the globe</small></h2>
-                         </div>
-
-                         <div class="owl-carousel owl-theme owl-client">
-                              <div class="col-md-4 col-sm-4">
-                                   <div class="item">
-
-                                        <div class="tst-author">
-                                             <h4>Lucas Radke</h4>
-                                             <span>Product Manager @ Plesk</span>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonials item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-author">
+                                            <div class="author">Tani Kalweit</div>
+                                            <div class="designation">Lead Developer</div>
                                         </div>
-                                        <p>We worked together with Abdul / Qualitx now multiple times in the past to test our machine learning algorithms and we couldn't be happier with the results. They delivered not only fast but in a fantastic quality helping us to test and proof our algorithm.</p>
-                                        <div class="tst-rating">
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
+                                        <p>I have been very impressed with your work the last couple of months. Your
+                                            work is always done on time and you have found a couple of critical issues
+                                            before preventing us from having production errors. I also appreciate that
+                                            you are available to run test cases other times throughout the week when we
+                                            have needed additional testing. I look forward to continuing to work with
+                                            you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonials item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-author">
+                                            <div class="author">Adam</div>
+                                            <div class="designation">Project Manager</div>
                                         </div>
-                                   </div>
-                              </div>
-
-                              <div class="col-md-4 col-sm-4">
-                                   <div class="item">
-
-                                        <div class="tst-author">
-                                             <h4>Adam</h4>
-                                             <span>Project manager</span>
+                                        <p>I have recently had a chance to work with Qualitx. Initially, our contract
+                                            was for 3 months but later after seeing their skill in regards to Manual
+                                            testing and automated testing, I have decided to work with them full time.
+                                            They are now working with us for over a year The Resources provided to me
+                                            are good, understandable and understand the urgency in terms of completion
+                                            of work.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonials item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-author">
+                                            <div class="author">Lucas Radke</div>
+                                            <div class="designation">Product Manager</div>
                                         </div>
-                                        <p>I have recently had a chance to work with Qualitx. Initially our contract was of 3 month but later after seeing their skill in regards to Manual testing and automated testing, I have decided to work with them full time. They are now working with us for over a year now. Resources provided to me are good, understandable and really understand the urgency in terms of completion of work.</p>
-                                        <div class="tst-rating">
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                        </div>
-                                   </div>
-                              </div>
+                                        <p>We worked together with Abdul / Qualitx now multiple times in the past to
+                                            test our machine learning algorithms and we couldn't be happier with the
+                                            results. They delivered not only fast but in a fantastic quality helping us
+                                            to test and proof our algorithm.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                              <div class="col-md-4 col-sm-4">
-                                   <div class="item">
 
-                                        <div class="tst-author">
-                                             <h4>Tani Kalweit</h4>
-                                             <span>Lead Developer @ TOT</span>
-                                        </div>
-                                        <p>I have been very impressed with your work the last couple months.  Your work is always done in a timely manner and you have found a couple of critical issue before preventing us from having production errors.  I also appreciate that you are available to run test cases other times throughout the week when we have needed additional testing.  I look forward to continuing to work with you.</p>
-                                        <div class="tst-rating">
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                             <i class="fa fa-star"></i>
-                                        </div>
-                                   </div>
-                              </div>
-
-                         </div>
                     </div>
 
-               </div>
-          </div>
-     </section>
+                </div>
+            </section>
 
+            <section id="contact" class="contact">
 
-     <!-- CONTACT -->
-     <!-- <section id="contact">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-12 col-md-push-3">
-                         <form id="contact-form" role="form" action="" method="post">
-                              <div class="section-title">
-                                   <h2>Contact us <small>we love conversations. let us talk!</small></h2>
-                              </div>
-
-                              <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Enter full name" name="name" required="">
-
-                                   <input type="email" class="form-control" placeholder="Enter email address" name="email" required="">
-
-                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>
-                              </div>
-
-                              <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Send Message">
-                              </div>
-
-                         </form>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <h3>Contact Us</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form
+                                name="sentMessage"
+                                action="https://formsubmit.co/contact@qualitxinc.com"
+                                method="POST"
+                                class="container"
+                                id="contactForm"
+                                novalidate
+                            >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text"  name="name" class="form-control"
+                                                placeholder="Your Name *" id="name"
+                                                required data-validation-required-message="Please enter your name.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Your Email *" id="email" required
+                                                data-validation-required-message="Please enter your email address.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Your Message *"
+                                                id="message" required
+                                                data-validation-required-message="Please enter a message."></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success">
+                                            <div class="alert alert-success" style="display: none;">
+                                                <strong>
+                                                    Thanks for contacting! we will try to respond at our earliest convenience.
+                                                </strong>
+                                            </div>
+                                            <div class="alert alert-danger" style="display: none;">
+                                                <strong>
+                                                    Unable to receive your message, please feel free to email us at
+                                                    <a target="_blank" href="mailto:contact@qualitxinc.com">
+                                                        contact@qualitxinc.com
+                                                    </a>.
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
 
-               </div>
-          </div>
-     </section> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <div class="footer-contact-info">
+                                    <h4>Contact info</h4>
+                                    <ul>
+                                        <li><strong>E-mail :</strong> contact@qualitxinc.com</li>
+                                        <li><strong>Phone :</strong> +92 042 35 87 1315</li>
+                                    </ul>
+                                </div>
+                            </div>
 
+                            <div class="col-md-4">
+                                <div class="footer-contact-info">
+                                    <h4>Our Office</h4>
+                                    <ul>
+                                        <li><strong>Location :</strong> Office #713, 7th Floor - Siddique Trade Center,
+                                            54000, Lahore, Pakistan</li>
 
-     <!-- FOOTER -->
-     <footer id="footer">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Headquarter</h2>
-                              </div>
-                              <address>
-                                   <p>Rehman Tower, Gulberg<br>Lahore, Pakistan </p>
-                              </address>
-
-                              <ul class="social-icon">
-                                   <li><a href="https://www.linkedin.com/in/qualitx-hr-341203215/" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                              </ul>
-
-                              <div class="copyright-text">
-                                   <p>Copyright &copy; 2021 Qualitx Inc.</p>
-
-                              </div>
-                         </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Contact Info</h2>
-                              </div>
-                              <address>
-                                   <p>+92 320 494205, +92 303 9806271</p>
-                                   <p><a href="mailto:youremail.co">hr.qualitx@gmail.com</a></p>
-                              </address>
-                         </div>
+                <footer class="style-1">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col" style="color: #C91042;">
+                                <center>
+                                    ©Qualitx 2022
+                                </center>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="footer-social text-center">
+                                    <ul class="row-6">
+                                        <li class="col"><a target="_blank" href="https://twitter.com/Qualitxinc"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li class="col"><a target="_blank" href="https://www.facebook.com/qualitxinc"><i
+                                                    class="fab fa-facebook"></i></a></li>
+                                        <li class="col"><a target="_blank"
+                                                href="https://www.linkedin.com/company/qualitxinc"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                        <li class="col"><a target="_blank"
+                                                href="https://www.instagram.com/qualitxinc"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li class="col"><a target="_blank" href="mailto:contact@qualitxinc.com"><i
+                                                    class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row" id="bottom-links">
+                                    <center>
+                                        <a class="col" href="#">Privacy Policy</a>
+                                        <span class="col-2">|</span>
+                                        <a class="col" href="#">Terms of Use</a>
+                                    </center>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-               </div>
-          </div>
-     </footer>
+                </footer>
 
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+            </section>
+        </div>
+    </div>
+
+    <!-- jQuery Version 2.1.1 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript
+    <script src="asset/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+
+
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: 'body'
+        })
+    </script>
+
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
