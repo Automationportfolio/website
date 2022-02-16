@@ -18,7 +18,7 @@ $(function () {
       }
       $.ajax({
         method: 'POST',
-        url: 'https://formsubmit.co/ajax/contact@qualitxinc.com',
+        url: 'https://formsubmit.co/ajax/sqaengineer.arehman@gmail.com',
         dataType: 'json',
         accepts: 'application/json',
         data: {
@@ -31,6 +31,7 @@ $(function () {
           // Success message
           if (response && response.success === 'true') {
             $('#success > .alert-success').show();
+            $form.trigger('reset');
           } else {
             $('#success > .alert-danger').show();
           }
